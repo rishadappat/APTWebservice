@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="APTWebserviceSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPm-ER-aiN">
+                                <rect key="frame" x="156" y="36" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gja-QF-wZc"/>
+                                </constraints>
+                                <state key="normal" title="Test GET"/>
+                                <connections>
+                                    <action selector="testGetClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCd-xK-r49"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nti-Lv-bUH">
+                                <rect key="frame" x="150.5" y="82" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fpU-pO-4Rk"/>
+                                </constraints>
+                                <state key="normal" title="Test POST"/>
+                                <connections>
+                                    <action selector="testPostClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d2n-qo-m2j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzH-BO-TNU">
+                                <rect key="frame" x="146.5" y="128" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="t5L-3A-ej7"/>
+                                </constraints>
+                                <state key="normal" title="Test Upload"/>
+                                <connections>
+                                    <action selector="testUploadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MeV-YG-rLB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="response will appear here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imA-w6-bOz">
+                                <rect key="frame" x="16" y="174" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UCm-6k-J9N">
+                                <rect key="frame" x="16" y="211" width="343" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="YAd-0K-qRN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TzH-BO-TNU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Q6-fA-Cu9"/>
+                            <constraint firstItem="rPm-ER-aiN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="8CV-hF-cQl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="imA-w6-bOz" secondAttribute="trailing" constant="16" id="Amz-wl-LtL"/>
+                            <constraint firstItem="UCm-6k-J9N" firstAttribute="top" secondItem="imA-w6-bOz" secondAttribute="bottom" constant="16" id="BX3-G8-kxo"/>
+                            <constraint firstItem="rPm-ER-aiN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LqP-Kr-cGw"/>
+                            <constraint firstItem="Nti-Lv-bUH" firstAttribute="top" secondItem="rPm-ER-aiN" secondAttribute="bottom" constant="16" id="T3B-h2-5TH"/>
+                            <constraint firstItem="imA-w6-bOz" firstAttribute="top" secondItem="TzH-BO-TNU" secondAttribute="bottom" constant="16" id="VQp-eu-KM7"/>
+                            <constraint firstItem="UCm-6k-J9N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cul-E0-gro"/>
+                            <constraint firstItem="imA-w6-bOz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="e98-D7-gTM"/>
+                            <constraint firstItem="Nti-Lv-bUH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p30-jD-RUn"/>
+                            <constraint firstItem="TzH-BO-TNU" firstAttribute="top" secondItem="Nti-Lv-bUH" secondAttribute="bottom" constant="16" id="uOb-oE-Zx6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UCm-6k-J9N" secondAttribute="trailing" constant="16" id="zGu-xB-o5r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatar" destination="UCm-6k-J9N" id="eMT-T8-Ct4"/>
+                        <outlet property="response" destination="imA-w6-bOz" id="3Wd-nV-vsF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
