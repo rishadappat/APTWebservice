@@ -2,7 +2,7 @@
 A WebService client written in swift
 
 # Installation Guide for APTWebservice
-- You want to add pod 'APTWebservice', '~> 0.1' similar to the following to your Podfile:
+- Add the following to your Podfile:
 
        target 'MyApp' do
          pod 'APTWebservice', '~> 0.1'
