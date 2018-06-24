@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 import MobileCoreServices
-class APTWebservice: NSObject, URLSessionDelegate, URLSessionDataDelegate {
+class APTWebservice: NSObject {
     
     static var baseUrl = ""
     static var ftpUrl = ""
